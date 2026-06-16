@@ -8,6 +8,9 @@ import { PandaCompanion } from "@/components/ui/panda-companion";
 import { Providers } from "@/components/providers";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SITE_URL, organizationJsonLd, websiteJsonLd } from "@/lib/seo";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const archivo = Archivo({
   variable: "--font-archivo",
@@ -111,6 +114,7 @@ export default function RootLayout({
           <MobileCTA />
           <PandaCompanion />
         </Providers>
+        {GA_ID ? <GoogleAnalytics gaId={GA_ID} /> : null}
       </body>
     </html>
   );
