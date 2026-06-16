@@ -15,6 +15,8 @@ const archivo = Archivo({
   display: "swap",
 });
 
+
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -72,6 +74,9 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true, "max-image-preview": "large" },
   },
   category: "technology",
+  verification: {
+    google: "CHKIopqUo4s8mj70u34Hu3u_KKABU79B84EuQAQfr20",
+  },
 };
 
 export const viewport: Viewport = {

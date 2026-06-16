@@ -1,6 +1,6 @@
 import { brand, type Service, type CaseStudy } from "./data";
 
-export const SITE_URL = "https://aether.studio";
+export const SITE_URL = "https://aether-stdio.vercel.app";
 export const SITE_NAME = "Aether";
 
 /** Build an absolute URL for a path (used by canonical, sitemap, JSON-LD). */
@@ -19,7 +19,7 @@ export const organizationJsonLd = {
   name: SITE_NAME,
   legalName: "Aether Studio",
   url: SITE_URL,
-  logo: `${SITE_URL}/icon.svg`,
+  logo: `${SITE_URL}/icon.png`,
   description:
     "Full-lifecycle web engineering studio: web development, maintenance, managed hosting, cloud deployment, and CI/CD.",
   email: brand.email,
